@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DripBerry | Premium Chocolate Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-dark:#1a0e08;
+  --bg-card:#2a140c;
+  --choco:#3b1f14;
+  --cream:#f5e6d3;
+  --accent:#c62828;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:
+    radial-gradient(circle at top,#3b1f14,#1a0e08);
+  color:#fff;
+  min-height:100vh;
+}
+
+/* HEADER */
+header{
+  padding:32px 20px 24px;
+  text-align:center;
+}
+
+header h1{
+  font-size:2.4rem;
+  font-weight:700;
+  letter-spacing:2px;
+  color:#ffd6d6;
+}
+
+header p{
+  margin-top:6px;
+  font-size:.95rem;
+  color:#f5e6d3;
+  opacity:.9;
+}
+
+/* CONTAINER */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:10px 18px 120px;
+}
+
+/* MENU CARD */
+.menu{
+  background:linear-gradient(180deg,#32180f,#241008);
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 20px 40px rgba(0,0,0,.55);
+  backdrop-filter: blur(6px);
+  animation:fadeUp .7s ease;
+}
+
+.menu h2{
+  text-align:center;
+  margin-bottom:20px;
+  font-size:1.6rem;
+  color:#ffe2e2;
+}
+
+/* ITEM */
+.item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 10px;
+  border-radius:14px;
+  transition:.3s;
+}
+
+.item:not(:last-child){
+  margin-bottom:10px;
+}
+
+.item:hover{
+  background:rgba(255,255,255,.04);
+}
+
+.item-name{
+  font-size:1rem;
+  color:#f7e7d3;
+}
+
+.price{
+  background:linear-gradient(135deg,#c62828,#8e1c1c);
+  padding:6px 14px;
+  border-radius:30px;
+  font-weight:600;
+  font-size:.95rem;
+}
+
+/* INFO CARD */
+.info{
+  margin-top:26px;
+  background:linear-gradient(180deg,#2b140c,#1f0f08);
+  border-radius:18px;
+  padding:18px;
+  text-align:center;
+  box-shadow:0 12px 25px rgba(0,0,0,.45);
+}
+
+.info div{
+  margin:8px 0;
+  font-size:.95rem;
+  color:#f5e6d3;
+}
+
+.info strong{
+  color:#ffd6d6;
+}
+
+/* STICKY CTA */
+.cta{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:linear-gradient(90deg,#2a140c,#3b1f14);
+  padding:14px;
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  box-shadow:0 -8px 25px rgba(0,0,0,.6);
+}
+
+.cta a{
+  flex:1;
+  text-align:center;
+  padding:12px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:.95rem;
+}
+
+.call{
+  background:#f5e6d3;
+  color:#2a140c;
+}
+
+.whatsapp{
+  background:#25D366;
+  color:#fff;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  font-size:.75rem;
+  color:#d6bfb3;
+  padding:20px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* DESKTOP */
+@media(min-width:768px){
+  header h1{font-size:2.8rem;}
+  .item-name{font-size:1.05rem;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>DRIPBERRY</h1>
+  <p>Freshly Prepared • Hygienic • Premium Chocolate</p>
+</header>
+
+<div class="container">
+
+  <section class="menu">
+    <h2>🍓 Our Menu</h2>
+
+    <div class="item">
+      <span class="item-name">London Strawberry Cup</span>
+      <span class="price">₹79</span>
+    </div>
+
+    <div class="item">
+      <span class="item-name">Double Brownie Cup</span>
+      <span class="price">₹99</span>
+    </div>
+
+    <div class="item">
+      <span class="item-name">Signature Brownie</span>
+      <span class="price">₹99</span>
+    </div>
+
+    <div class="item">
+      <span class="item-name">Strawberry Choco Stick</span>
+      <span class="price">₹99</span>
+    </div>
+  </section>
+
+  <section class="info">
+    <div>📍 <strong>Iskon Garden Road</strong></div>
+    <div>📞 <strong>+91 8209699330</strong></div>
+  </section>
+
+</div>
+
+<div class="cta">
+  <a href="tel:1234567890" class="call">Call Now</a>
+  <a href="https://wa.me/911234567890" target="_blank" class="whatsapp">WhatsApp Order</a>
+</div>
+
+<footer>
+  © 2026 DripBerry
+</footer>
+
+<script>
+  console.log("Premium DripBerry menu loaded");
+</script>
+
+</body>
+</html>
